@@ -1482,7 +1482,7 @@ img.left {
 }
 
 .section-padding {
-  padding-top: 140px;
+  padding-top: 110px;
   padding-bottom: 40px;
 }
 
@@ -5606,34 +5606,6 @@ footer .subscribe-minimal button {
   border: 0;
 }
 
-footer.clean-footer.crev {
-  position: relative;
-}
-
-footer.clean-footer.crev .bord-thin-top,
-footer.clean-footer.crev .bord-thin-left,
-footer.clean-footer.crev .bord-thin-right,
-footer.clean-footer.crev .bord-thin-bottom {
-  border-color: rgba(255, 255, 255, 0.1);
-}
-
-footer.clean-footer.crev:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 40px;
-  right: 0;
-  bottom: 40px;
-  background: #1a1a1a;
-  z-index: 2;
-}
-
-footer.clean-footer.crev:before {
-  background: -webkit-gradient(linear, left top, left bottom, from(#f5f7f9), to(rgba(29, 29, 29, 0.5)));
-  background: -webkit-linear-gradient(top, #f5f7f9, rgba(29, 29, 29, 0.5));
-  background: -o-linear-gradient(top, #f5f7f9, rgba(29, 29, 29, 0.5));
-  background: linear-gradient(180deg, #f5f7f9, rgba(29, 29, 29, 0.5));
-}
 
 .modern-footer {
   background: #1a1a1a;
@@ -9655,7 +9627,7 @@ footer.clean-footer.crev:before {
     margin-top: 30px;
   }
   .modern-footer .call-action {
-    margin-bottom: 50px;
+    margin-bottom: 60px;
   }
   .modern-footer .bord-left:after {
     display: none;

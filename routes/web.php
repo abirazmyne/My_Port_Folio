@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MyWebsiteController;
+use App\Http\Controllers\MyContactController;
 
 
 /*
@@ -16,6 +17,7 @@ use App\Http\Controllers\MyWebsiteController;
 */
 
 Route::get('/', [MyWebsiteController::class, 'index'])->name('home');
+Route::get('/website/mycontact', [MyContactController::class, 'index'])->name('mycontact');
 //Route::get('/product-category/{id}', [MyWebsiteController::class, 'productCategory'])->name('product.category');
 
 //

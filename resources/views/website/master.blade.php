@@ -249,7 +249,7 @@
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link  text-white" href="page-contact.html"><span class="rolling-text">Contact Us</span></a>
+                        <a class="nav-link  text-white" href="{{route('mycontact')}}"><span class="rolling-text">Contact Us</span></a>
                     </li>
                 </ul>
             </div>
@@ -636,15 +636,28 @@
 
         <!-- ==================== Start Footer ==================== -->
 
-        <footer class="clean-footer crev bg-img mt-3" data-background="{{asset('/')}}website/assets/imgs/header/bg1.jpg"
+        <footer class="clean-footer crev bg-img " data-background="{{asset('/')}}website/assets/imgs/header/bg1.jpg"
                 data-overlay-dark="10">
             <div class="container pb-40 section-padding ontop">
-                <div class="cal-action pb-50 mb-80 bord-thin-bottom">
-                    <h2 class="fz-120 line-height-1 d-rotate wow">
-                            <span class="rotate-text"><a href="page-contact3.html">Thank's a lot <span
-                                        class="ml-30 fz-70 ti-arrow-top-right"></span></a></span>
-                    </h2>
-                </div>
+               <div class="row">
+                   <div class=" col-md-8 call-action mb-2">
+                       <h2 class="d-slideup wow fz-60 fw-600">
+                        <span class="sideup-text">
+                            <span class="up-text">Have project in mind ?</span>
+                        </span>
+                           <span class="sideup-text">
+                            <span class="up-text underline">
+                                <a href="page-contact3.html" class="main-color">Let’s talk & get to work.</a>
+                            </span>
+                        </span>
+                       </h2>
+                   </div>
+
+                   <div class="col-md-4">
+
+                   </div>
+               </div>
+                <hr>
                 <div class="row">
                     <div class="col-lg-3">
                         <div class="logo icon-img-100">
