@@ -243,8 +243,9 @@
             <div class="container">
                 <div class="row justify-content-between">
                     <div class="col-lg-5">
-                        <div class="img md-mb50">
-                            <img src="{{asset('/')}}website/assets/imgs/intro/02.jpg" alt="" class="radius-30">
+                        <div class="img mb50">
+
+                            <img src="{{asset('/')}}website/assets/imgs/mu_pic1.jpg" alt="" class="radius-30">
                             <div class="curv-title main-bg">
 
                                 <div class="shap-left-bottom">
@@ -276,7 +277,7 @@
 {{--                                            to have tangible, human-positive impact. Also, we get front row--}}
 {{--                                            seats to the future.</p>--}}
                                     </div>
-                                    <div class="mt-50">
+                                    <div class="mt-30">
                                         <div class="skills-box">
                                             <div class="skill-item mb-40">
                                                 <h5 class="sub-title mb-15">Software Development Backend</h5>
@@ -605,45 +606,41 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="row justify-content-center mt-50">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="item d-flex align-items-center justify-content-center md-mb50">
+                            <h2 class="fz-80 line-height-1">15+</h2>
+                            <span class="sub-title opacity-7 ml-30">Projects <br> Completed</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="item d-flex align-items-center justify-content-center md-mb50">
+                            <h2 class="fz-80 line-height-1">1</h2>
+                            <span class="sub-title opacity-7 ml-30">Year <br> Laravel</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="item d-flex align-items-center justify-content-center">
+                            <h2 class="fz-80 line-height-1">6<span class="fz-50">+</span></h2>
+                            <span class="sub-title opacity-7 ml-30">Liked My <br> Profile</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-50 mb-25" style="align-items: end;">
+                   <div class="card col-md-3 bg-danger"  style="    margin-left: 70%;">
+                       <a href="" class="fz-40 text-white text-center"> Give Me <span class="text-white"><i class="fa-solid fa-thumbs-up"></i></span></a>
+                   </div>
+
+                </div>
+
             </div>
 
 
         </section>
 
         <!-- ==================== End Skills ==================== -->
-
-
-
-
-
-        <!-- ==================== Start numbers ==================== -->
-
-        <section class="numbers ">
-            <div class="container ">
-                <div class="row justify-content-center">
-                    <div class="col-lg-4 col-md-6">
-                        <div class="item d-flex align-items-center justify-content-center md-mb50">
-                            <h2 class="fz-80 line-height-1">52</h2>
-                            <span class="sub-title opacity-7 ml-30">Projects <br> Completed</span>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="item d-flex align-items-center justify-content-center md-mb50">
-                            <h2 class="fz-80 line-height-1">34</h2>
-                            <span class="sub-title opacity-7 ml-30">Team <br> Members</span>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="item d-flex align-items-center justify-content-center">
-                            <h2 class="fz-80 line-height-1">6k<span class="fz-50">+</span></h2>
-                            <span class="sub-title opacity-7 ml-30">Customers <br> Satisfaction</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ==================== End numbers ==================== -->
 
 
 
