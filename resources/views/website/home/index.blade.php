@@ -1,45 +1,59 @@
 @extends('website.master')
 
 @section('body')
-    <main class="main-bg pt-80">
+
 
         <!-- ==================== Start Header ==================== -->
 
         <header class="crev-agency-header">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-3 left-clumn">
-                        <div class="img overflow-hidden" style="height: 224px !important ; ">
-                            <img class="img-fluid" src="{{asset('/')}}website/assets/imgs/mu_pic1.jpg" alt="" >
-                        </div>
-                        <div class="row overflow-hidden" >
-                            <div class="col-sm card m-2 border-0"  style="height: 224px !important;">
-                                <div class="row mt-3 p-t">
-                                        <h1 class="text-center fs-1">45 <span class="fs-1"><i class="fa-solid fa-user"></i></span></h1>
-                                </div>
-                                <div class="row p-0 m-0" style="height: 100%" >
-                                    <button class="btn btn-danger  p-0 mt-2 fs-2">Give <span class="fs-2 text-white"><i class="fa-regular fa-thumbs-up"></i></span></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 valign center-clumn">
-                        <div>
-                            <div class="caption main-bg">
-                                <h1 class="text-u">Abir Azmyne</h1>
-                                <hr>
-                                <h2>Web Developer</h2>
+                    <div class="col-lg-9">
 
 
-                            </div>
-                            <div class="row justify-content-center mt-30">
-                                <div class="col-md-9">
-                                    <p>Our team of experts is dedicated to helping you achieve
-                                        your digital goals. From website design and development
-                                        to SEO, PPC advertising, and social media marketing.</p>
+                            <div id="carouselExampleCaptions" class="col carousel slide">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
                                 </div>
+                                <div class="carousel-inner rounded-3">
+                                    <div class="carousel-item active  coimg height">
+                                        <img src="{{asset('/')}}website/assets/imgs/header/2.jpg" class="d-block w-100 carsing img-fluid" alt="...">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>First slide label</h5>
+                                            <p>Some representative placeholder content for the first slide.</p>
+                                        </div>
+                                        <div class="mt-3">
+                                            <h5>First slide label</h5>
+                                            <p>Some representative placeholder content for the first slide.</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item  coimg">
+                                        <img src="{{asset('/')}}website/assets/imgs/header/2.jpg" class="d-block w-100 carsing img-fluid" alt="...">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Second slide label</h5>
+                                            <p>Some representative placeholder content for the second slide.</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item  coimg">
+                                        <img src="{{asset('/')}}website/assets/imgs/header/2.jpg" class="d-block w-100 carsing img-fluid" alt="...">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Third slide label</h5>
+                                            <p>Some representative placeholder content for the third slide.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
                             </div>
-                        </div>
+
                     </div>
                     <div class="col-lg-3 right-clumn">
                        <div class="row media-pad">
@@ -162,79 +176,56 @@
         <!-- ==================== End Header ==================== -->
 
 
-
-
-
         <!-- ==================== Start Services ==================== -->
 
-        <section class="services-boxs section-padding pb-0">
+        <section class="services section-padding pb-0" data-scroll-index="1">
             <div class="container">
                 <div class="sec-head mb-80">
-                    <h6 class="sub-title main-color mb-25">Our Specialize</h6>
+                    <h6 class="sub-title main-color mb-25">If you have project ! Let's Discuss</h6>
                     <div class="bord pt-25 bord-thin-top d-flex align-items-center">
-                        <h2 class="fw-600 text-u ls1">What We Have <span class="fw-200">to Offer</span></h2>
+                        <h2>Offering <span class="fw-200">You</span></h2>
                         <div class="ml-auto">
-                            <a href="page-services.html" class="go-more">
+                            <a href="#" class="go-more">
                                 <span class="text">View all services</span>
                                 <span class="icon ti-arrow-top-right"></span>
                             </a>
                         </div>
                     </div>
                 </div>
-                <div class="row pt-30">
-                    <div class="col-lg-3 col-md-6 items">
-                        <div class="item-box bg md-mb50">
-                            <div class="icon mb-40 opacity-5">
-                                <img src="{{asset('/')}}website/assets/imgs/serv-icons/4.png" alt="">
-                            </div>
-                            <h5 class="mb-15 text-u">Web <br> Development</h5>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="item-box radius-15 md-mb30">
+                            <div class="ti-paint-bucket main-color fz-50 mb-40"></div>
+                            <h5 class="mb-15">UI / UX Design</h5>
                             <p>Live workshop where we define the main problems and challenges before
                                 building a strategic plan moving forward.</p>
-                            <a href="page-services-details.html" class="rmore mt-30">
+                            <a href="#" class="rmore mt-30">
                                 <span class="sub-title">Read More</span>
-                                <img src="{{asset('/')}}website/assets/imgs/arrow-right.png" alt="" class="icon-img-20 ml-5">
+                                <img src="assets/imgs/arrow-right.png" alt="" class="icon-img-20 ml-5">
                             </a>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 items">
-                        <div class="item-box bg md-mb50">
-                            <div class="icon mb-40 opacity-5">
-                                <img src="{{asset('/')}}website/assets/imgs/serv-icons/5.png" alt="">
-                            </div>
-                            <h5 class="mb-15 text-u">UI / UX <br> Designing</h5>
+                    <div class="col-lg-4">
+                        <div class="item-box radius-15 md-mb30">
+                            <div class="ti-layout-slider main-color fz-50 mb-40"></div>
+                            <h5 class="mb-15">Web Development</h5>
                             <p>Live workshop where we define the main problems and challenges before
                                 building a strategic plan moving forward.</p>
                             <a href="page-services-details.html" class="rmore mt-30">
                                 <span class="sub-title">Read More</span>
-                                <img src="{{asset('/')}}website/assets/imgs/arrow-right.png" alt="" class="icon-img-20 ml-5">
+                                <img src="assets/imgs/arrow-right.png" alt="" class="icon-img-20 ml-5">
                             </a>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 items">
-                        <div class="item-box bg sm-mb50">
-                            <div class="icon mb-40 opacity-5">
-                                <img src="{{asset('/')}}website/assets/imgs/serv-icons/6.png" alt="">
-                            </div>
-                            <h5 class="mb-15 text-u">Digital <br> Marketing</h5>
+                    <div class="col-lg-4">
+                        <div class="item-box radius-15">
+                            <div class="ti-rocket main-color fz-50 mb-40"></div>
+                            <h5 class="mb-15">Digital Marketing</h5>
                             <p>Live workshop where we define the main problems and challenges before
                                 building a strategic plan moving forward.</p>
                             <a href="page-services-details.html" class="rmore mt-30">
                                 <span class="sub-title">Read More</span>
-                                <img src="{{asset('/')}}website/assets/imgs/arrow-right.png" alt="" class="icon-img-20 ml-5">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 items">
-                        <div class="item-box bg">
-                            <div class="icon mb-40 opacity-5">
-                                <img src="{{asset('/')}}website/assets/imgs/serv-icons/0.png" alt="">
-                            </div>
-                            <h5 class="mb-15 text-u">Product <br> Design</h5>
-                            <p>Live workshop where we define the main problems and challenges before
-                                building a strategic plan moving forward.</p>
-                            <a href="page-services-details.html" class="rmore mt-30">
-                                <span class="sub-title">Read More</span>
-                                <img src="{{asset('/')}}website/assets/imgs/arrow-right.png" alt="" class="icon-img-20 ml-5">
+                                <img src="assets/imgs/arrow-right.png" alt="" class="icon-img-20 ml-5">
                             </a>
                         </div>
                     </div>
@@ -367,99 +358,6 @@
 
         <!-- ==================== End numbers ==================== -->
 
-
-        <!-- ==================== Start Marquee ==================== -->
-
-        <section class="marquee pt-30 pb-30 o-hidden ">
-           <div class="row mt-2">
-               <div class="col-md-2 0"></div>
-               <div class="col-md-8 overflow-hidden">
-
-                   <div class="container-fluid ">
-                       <div class="main-marq md-text text-u text-success">
-                           <div class="slide-har st1">
-                               <div class="box non-strok">
-                                   <div class="item">
-                                       <h4 class="d-flex align-items-center"><span>Website Backend</span>
-                                           <span class="fz-50 ml-50 stroke icon">*</span>
-                                       </h4>
-                                   </div>
-                                   <div class="item">
-                                       <h4 class="d-flex align-items-center"><span>Theme Customization</span> <span
-                                               class="fz-50 ml-50 stroke icon">*</span></h4>
-                                   </div>
-                                   <div class="item">
-                                       <h4 class="d-flex align-items-center"><span>Validation</span>
-                                           <span class="fz-50 ml-50 stroke icon">*</span>
-                                       </h4>
-                                   </div>
-                                   <div class="item">
-                                       <h4 class="d-flex align-items-center"><span> Analytics & Result</span>
-                                           <span class="fz-50 ml-50 stroke icon">*</span>
-                                       </h4>
-                                   </div>
-                                   <div class="item">
-                                       <h4 class="d-flex align-items-center"><span> Dynamic Websites</span>
-                                           <span class="fz-50 ml-50 stroke icon">*</span>
-                                       </h4>
-                                   </div>
-                                   <div class="item">
-                                       <h4 class="d-flex align-items-center"><span> E-commerce</span>
-                                           <span class="fz-50 ml-50 stroke icon">*</span>
-                                       </h4>
-                                   </div>
-                                   <div class="item">
-                                       <h4 class="d-flex align-items-center"><span> Product Management</span>
-                                           <span class="fz-50 ml-50 stroke icon">*</span>
-                                       </h4>
-                                   </div>
-                               </div>
-                               <div class="box non-strok">
-                                   <div class="item">
-                                       <h4 class="d-flex align-items-center"><span>Website Backend</span>
-                                           <span class="fz-50 ml-50 stroke icon">*</span>
-                                       </h4>
-                                   </div>
-                                   <div class="item">
-                                       <h4 class="d-flex align-items-center"><span>Theme Customization</span> <span
-                                               class="fz-50 ml-50 stroke icon">*</span></h4>
-                                   </div>
-                                   <div class="item">
-                                       <h4 class="d-flex align-items-center"><span>Validation</span>
-                                           <span class="fz-50 ml-50 stroke icon">*</span>
-                                       </h4>
-                                   </div>
-                                   <div class="item">
-                                       <h4 class="d-flex align-items-center"><span> Analytics & Result</span>
-                                           <span class="fz-50 ml-50 stroke icon">*</span>
-                                       </h4>
-                                   </div>
-                                   <div class="item">
-                                       <h4 class="d-flex align-items-center"><span> Dynamic Websites</span>
-                                           <span class="fz-50 ml-50 stroke icon">*</span>
-                                       </h4>
-                                   </div>
-                                   <div class="item">
-                                       <h4 class="d-flex align-items-center"><span> E-commerce</span>
-                                           <span class="fz-50 ml-50 stroke icon">*</span>
-                                       </h4>
-                                   </div>
-                                   <div class="item">
-                                       <h4 class="d-flex align-items-center"><span> Product Management</span>
-                                           <span class="fz-50 ml-50 stroke icon">*</span>
-                                       </h4>
-                                   </div>
-                               </div>
-                           </div>
-                       </div>
-                   </div>
-
-               </div>
-               <div class="col-md-2"></div>
-           </div>
-        </section>
-
-        <!-- ==================== End Marquee ==================== -->
 
 
 
@@ -1038,5 +936,4 @@
 
 
 
-    </main>
 @endsection

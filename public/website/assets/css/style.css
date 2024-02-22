@@ -226,11 +226,11 @@ figure {
 }
 
 .main-color {
-  color: #14cf93 !important;
+  color: #123BE0 !important;
 }
 
 .main-colorbg {
-  background: #14cf93 !important;
+  background: #123BE0 !important;
 }
 
 .main-color2 {
@@ -568,7 +568,7 @@ figure {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background: #14cf93;
+  background: #123BE0;
   -webkit-transform: scale(0);
   -ms-transform: scale(0);
   transform: scale(0);
@@ -578,7 +578,7 @@ figure {
 }
 
 .btn-circle:hover {
-  border-color: #14cf93;
+  border-color: #123BE0;
 }
 
 .btn-circle:hover:after {
@@ -4403,11 +4403,11 @@ body.loaded {
 }
 
 .blog-list-half .item .cont .tags a:hover {
-  background: #14cf93;
+  background: #123BE0;
 }
 
 .blog-list-half .item .cont .tags.colorbg a:hover {
-  background: #14cf93;
+  background: #123BE0;
   color: #fff;
 }
 
@@ -4496,7 +4496,7 @@ body.loaded {
 .blog-list-crev .item .background .more a {
   font-size: 14px;
   padding: 14px 35px;
-  background: #14cf93;
+  background: #123BE0;
   border-radius: 30px;
 }
 
@@ -4661,7 +4661,7 @@ body.loaded {
 }
 
 .sidebar .widget.tags a:hover {
-  background: #14cf93;
+  background: #123BE0;
 }
 
 .blog-main .item .content {
@@ -4783,7 +4783,7 @@ body.loaded {
 
 .main-post .info-area .tags a:hover,
 .main-post .info-area .share-icon a:hover {
-  background: #14cf93;
+  background: #123BE0;
   color: #1d1d1d;
 }
 
@@ -4872,7 +4872,7 @@ body.loaded {
 }
 
 .comments-post .item-box .replay-butn a:hover {
-  background: #14cf93;
+  background: #123BE0;
   color: #1d1d1d;
 }
 
@@ -4991,9 +4991,9 @@ body.loaded {
   left: 35px;
   right: 35px;
   bottom: 35px;
-  background: -webkit-linear-gradient(320deg, transparent, #14cf93);
-  background: -o-linear-gradient(320deg, transparent, #14cf93);
-  background: linear-gradient(130deg, transparent, #14cf93);
+  background: -webkit-linear-gradient(320deg, transparent, #123BE0);
+  background: -o-linear-gradient(320deg, transparent, #123BE0);
+  background: linear-gradient(130deg, transparent, #123BE0);
   opacity: 0;
   -webkit-transition: all .4s;
   -o-transition: all .4s;
@@ -5450,7 +5450,7 @@ body.loaded {
   height: 100%;
   bottom: 0;
   left: 0;
-  background-image: url(../imgs/patterns/lines1.png);
+  background-color: dimgrey;
   background-size: cover;
   background-position: center top;
   opacity: .12;
@@ -5492,7 +5492,7 @@ body.loaded {
 }
 
 .social-icon-circle a:hover {
-  color: #14cf93;
+  color: #123BE0;
 }
 
 .google-map {
@@ -5803,7 +5803,7 @@ footer .subscribe-minimal button {
 }
 
 .crev-agency-header .right-clumn .img {
-  margin-top: 70px;
+  margin-top: 28px;
 }
 
 .crev-portfolio-header {
@@ -6012,7 +6012,7 @@ footer .subscribe-minimal button {
   width: 3px;
   height: 3px;
   border-radius: 50%;
-  background: #14cf93;
+  background: #123BE0;
 }
 
 .page-header-error {
@@ -6769,7 +6769,7 @@ footer .subscribe-minimal button {
   position: absolute;
   width: 20px;
   height: 100px;
-  background: #14cf93;
+  background: #123BE0;
   opacity: 0;
   -webkit-transition: all .4s;
   -o-transition: all .4s;
@@ -7616,7 +7616,7 @@ footer .subscribe-minimal button {
 }
 
 .services .item-box2 .rmore:hover .arrow {
-  background: #14cf93;
+  background: #123BE0;
 }
 
 .services .item-box2 .rmore .arrow {
@@ -8620,8 +8620,8 @@ footer .subscribe-minimal button {
 }
 
 .team .item .social .links a:hover {
-  background: #14cf93;
-  border-color: #14cf93;
+  background: #123BE0;
+  border-color: #123BE0;
   color: #111;
 }
 
@@ -8736,7 +8736,7 @@ footer .subscribe-minimal button {
   position: absolute;
   width: 20px;
   height: 100px;
-  background: #14cf93;
+  background: #123BE0;
   opacity: 0;
   -webkit-transition: all .4s;
   -o-transition: all .4s;
@@ -8792,7 +8792,7 @@ footer .subscribe-minimal button {
   width: 0;
   top: 0;
   left: 0;
-  background-color: #14cf93;
+  background-color: #123BE0;
   -webkit-transition: all 1.5s;
   -o-transition: all 1.5s;
   transition: all 1.5s;
@@ -8839,7 +8839,7 @@ footer .subscribe-minimal button {
   line-height: 45px;
   text-align: center;
   border-radius: 0 50px 50px 50px;
-  background: #14cf93;
+  background: #123BE0;
   color: #1a1a1a;
   font-size: 17px;
   font-weight: 500;
@@ -9262,6 +9262,19 @@ footer .subscribe-minimal button {
 
 }
 
+.coimg{
+    height: 489px;
+    background-color: #0c63e4;
+    image-rendering: optimizeQuality;
+    image-orientation: inherit;
+}
+.carsing{
+    height: 100%;
+    width: 100%;
+}
+
+
+
 /* Shop
 -----------------------------------------------------------------*/
 /* ====================== [ Start Responsive ] ====================== */
@@ -9274,6 +9287,17 @@ footer .subscribe-minimal button {
   }
   .md-mb20 {
     margin-bottom: 20px;
+  }
+
+  .coimg{
+      height: 350px;
+      background-color: #0c63e4;
+      image-rendering: optimizeQuality;
+      image-orientation: inherit;
+  }
+  .carsing{
+      height: 100%;
+      width: 100%;
   }
 
   .media-pad {

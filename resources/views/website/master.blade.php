@@ -105,25 +105,20 @@
             <!-- navbar links -->
             <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
                 <ul class="navbar-nav">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-white" data-toggle="dropdown" href="#" role="button"
-                           aria-haspopup="true" aria-expanded="false"><span class="rolling-text">Home</span></a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item " href="home-main.html">Main Home</a>
-                            <a class="dropdown-item" href="home-startup-onepage.html">Modern Startup</a>
-                            <a class="dropdown-item" href="home-creative-agency.html">Creative Agency</a>
-                        </div>
+                    <li class="nav-item ">
+                        <a class="nav-link e text-white" href="{{route('home')}}" ><span class="rolling-text">Home</span></a>
+
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle  text-white" data-toggle="dropdown" href="#" role="button"
-                           aria-haspopup="true" aria-expanded="false"><span class="rolling-text">Portfolio</span></a>
+                           aria-haspopup="true" aria-expanded="false"><span class="rolling-text">Demos</span></a>
                         <div class="dropdown-menu mega-menu">
                             <div class="container">
                                 <div class="row">
                                     <div class="col-lg-6">
                                         <div class="clumn mb-80">
                                             <div class="title">
-                                                <h6 class="sub-title ls1 pb-20 bord-thin-bottom">Portfolio Type</h6>
+                                                <h6 class="sub-title ls1 pb-20 bord-thin-bottom">Demo Type</h6>
                                             </div>
                                             <div class="links row">
                                                 <div class="col-lg-4">
@@ -176,7 +171,7 @@
                                     <div class="col-lg-6">
                                         <div class="clumn">
                                             <div class="title">
-                                                <h6 class="sub-title ls1 pb-20 bord-thin-bottom">Portfolio Single</h6>
+                                                <h6 class="sub-title ls1 pb-20 bord-thin-bottom">Demo Single</h6>
                                             </div>
                                             <div class="links row">
                                                 <div class="col-lg-4">
@@ -198,45 +193,10 @@
                             </div>
                         </div>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle  text-white" data-toggle="dropdown" href="#" role="button"
-                           aria-haspopup="true" aria-expanded="false"><span class="rolling-text">Pages</span></a>
-                        <ul class="dropdown-menu">
-                            <li class="dropdown-item">
-                                <a href="#0">About Us <i class="fas fa-angle-right icon-arrow"></i></a>
-                                <ul class="dropdown-side">
-                                    <li><a class="dropdown-item" href="page-about.html">About Us 1</a>
-                                    </li>
-                                    <li><a class="dropdown-item" href="page-about2.html">About Us 2</a>
-                                    </li>
-                                    <li><a class="dropdown-item" href="page-about3.html">About Us 3</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="dropdown-item">
-                                <a href="#0">Services <i class="fas fa-angle-right icon-arrow"></i></a>
-                                <ul class="dropdown-side">
-                                    <li><a class="dropdown-item" href="page-services.html">Services 1</a></li>
-                                    <li><a class="dropdown-item" href="page-services2.html">Services 2</a>
-                                    </li>
-                                    <li><a class="dropdown-item" href="page-services-details.html">Services
-                                            Details</a></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown-item">
-                                <a href="#0">Contact Us <i class="fas fa-angle-right icon-arrow"></i></a>
-                                <ul class="dropdown-side">
-                                    <li><a class="dropdown-item" href="page-contact.html">Contact Us 1</a></li>
-                                    <li><a class="dropdown-item" href="page-contact2.html">Contact Us 2</a>
-                                    </li>
-                                    <li><a class="dropdown-item" href="page-contact3.html">Contact Us 3</a></li>
-                                </ul>
-                            </li>
-                            <li><a class="dropdown-item" href="page-team.html">Our Team</a></li>
-                            <li><a class="dropdown-item" href="page-team-single.html">Team Details</a></li>
-                            <li><a class="dropdown-item" href="page-FAQS.html">FAQS</a></li>
-                            <li><a class="dropdown-item" href="page-error404.html">Error 404</a></li>
-                        </ul>
+                    <li class="nav-item ">
+                        <a href="{{route('education')}}" class="nav-link   text-white">
+                            <span class="rolling-text">Education</span>
+                        </a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle  text-white" data-toggle="dropdown" href="#" role="button"
@@ -249,7 +209,7 @@
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link  text-white" href="{{route('mycontact')}}"><span class="rolling-text">Contact Us</span></a>
+                        <a class="nav-link  text-white" href="{{route('mycontact')}}"><span class="rolling-text">Contact</span></a>
                     </li>
                 </ul>
             </div>
@@ -285,7 +245,7 @@
                 <div class="col-lg-2">
                     <div class="menu-text">
                         <div class="text">
-                            <h2>putul</h2>
+                            <h2>Hello!</h2>
                         </div>
                     </div>
                 </div>
@@ -630,124 +590,135 @@
 
 
     <div id="smooth-content">
+        <main class="main-bg pt-100">
+
 
        @yield('body')
 
 
         <!-- ==================== Start Footer ==================== -->
+           <!-- ==================== Start Footer ==================== -->
 
-        <footer class="clean-footer crev bg-img " data-background="{{asset('/')}}website/assets/imgs/header/bg1.jpg"
-                data-overlay-dark="10">
-            <div class="container pb-40 section-padding ontop">
-               <div class="row">
-                   <div class=" col-md-8 call-action mb-2">
-                       <h2 class="d-slideup wow fz-60 fw-600">
-                        <span class="sideup-text">
-                            <span class="up-text">Have project in mind ?</span>
-                        </span>
-                           <span class="sideup-text">
-                            <span class="up-text underline">
-                                <a href="page-contact3.html" class="main-color">Let’s talk & get to work.</a>
-                            </span>
-                        </span>
-                       </h2>
-                   </div>
+           <!-- ==================== Start Contact ==================== -->
 
-                   <div class="col-md-4">
+           <section class="contact-crev section-padding bord-thin-bottom bord-thin-top" data-scroll-index="6">
+               <div class="container">
+                   <div class="row">
+                       <div class="col-lg-5">
+                           <div class="sec-head md-mb80">
+                               <h6 class="sub-title main-color mb-15 wow fadeInUp">Get In Touch</h6>
+                               <h2 class="text-u ls1 d-rotate wow">
+                                        <span class="rotate-text">Let's make your brand <span
+                                                class="fw-200">brilliant!</span></span>
+                               </h2>
+                               <p class="mt-10">If you would like to work with me or just want to get in
+                                   touch, I’d love to hear from you!</p>
+                               <div class="mt-80 ">
+                                   <a href="#"><span> <i class="fa-solid fa-phone"></i> </span> +88 01797306861</a>
+                               </div>
+                               <div class=" mt-2">
+                                   <a href="#"><span> <i class="fa-solid fa-envelope"></i> </span> abirazmyne0011@gmail.com</a>
+                               </div>
+                               <ul class="rest social-text d-flex mt-40">
+                                   <li class="mr-30">
+                                       <a href="#0" class="hover-this"><span class="hover-anim fs-3" style="color: #0A66C2"><i class="fa-brands fa-facebook"></i></span></a>
+                                   </li>
+                                   <li class="mr-30">
+                                       <a href="#0" class="hover-this"><span class="hover-anim fs-3" style="color: #010409"><i class="fa-brands fa-github"></i></span></a>
+                                   </li>
+                                   <li class="mr-30">
+                                       <a href="#0" class="hover-this"><span class="hover-anim fs-3" style="color: #0A66C2"><i class="fa-brands fa-linkedin"></i></span></a>
+                                   </li>
+                                   <li>
+                                       <a href="#0" class="hover-this"><span class="hover-anim fs-3" style="color: #bb2d3b"><i class="fa-brands fa-instagram"></i></span></a>
+                                   </li>
+                               </ul>
+                           </div>
+                       </div>
+                       <div class="col-lg-6 offset-lg-1 valign">
+                           <div class="full-width">
+                               <form id="contact-form" method="POST" action="">
 
+                                   <div class="messages"></div>
+
+                                   <div class="controls row">
+
+                                       <div class="col-lg-6">
+                                           <div class="form-group mb-30">
+                                               <input id="form_name" type="text" name="name" placeholder="Name"
+                                                      required="required">
+                                           </div>
+                                       </div>
+
+                                       <div class="col-lg-6">
+                                           <div class="form-group mb-30">
+                                               <input id="form_email" type="email" name="email" placeholder="Email"
+                                                      required="required">
+                                           </div>
+                                       </div>
+
+                                       <div class="col-12">
+                                           <div class="form-group mb-30">
+                                               <input id="form_subject" type="text" name="subject"
+                                                      placeholder="Subject">
+                                           </div>
+                                       </div>
+
+                                       <div class="col-12">
+                                           <div class="form-group">
+                                                    <textarea id="form_message" name="message" placeholder="Message"
+                                                              rows="4" required="required"></textarea>
+                                           </div>
+                                           <div class="mt-30">
+                                               <button type="submit" class="butn butn-full butn-bord radius-30">
+                                                   <span class="text">Let's Talk</span>
+                                               </button>
+                                           </div>
+                                       </div>
+
+                                   </div>
+                               </form>
+                           </div>
+                       </div>
                    </div>
                </div>
-                <hr>
-                <div class="row">
-                    <div class="col-lg-3">
-                        <div class="logo icon-img-100">
-                            <h1>Abir Azmyne</h1>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="column">
-                            <div class="mb-40">
-                                <h6 class="sub-title mb-30">Address</h6>
-                                <h5 class="opacity-8">Dhaka <br> Mirpur 1216, Shenpara</h5>
-                            </div>
+           </section>
 
-                            <a href="#0" class="underline">
-                                <span class="fz-22 main-color">+880 1797306861</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 offset-lg-1">
-                        <div class="column">
-                            <h6 class="sub-title mb-30">Useful Links</h6>
-                            <ul class="rest fz-14">
-                                <li class="mb-15">
-                                    <a href="page-about.html">About</a>
-                                </li>
-                                <li class="mb-15">
-                                    <a href="page-services.html">Services</a>
-                                </li>
-                                <li class="mb-15">
-                                    <a href="blog-list2.html">Blog</a>
-                                </li>
-                                <li>
-                                    <a href="page-contact.html">Contact</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-2">
-                        <div class="column">
-                            <h6 class="sub-title mb-30">Support</h6>
-                            <ul class="rest fz-14">
-                                <li class="mb-15">
-                                    <a href="page-FAQS.html">FAQS</a>
-                                </li>
-                                <li class="mb-15">
-                                    <a href="page-about.html">Term & Conditions</a>
-                                </li>
-                                <li class="mb-15">
-                                    <a href="page-about.html">Privacy policy</a>
-                                </li>
-                                <li>
-                                    <a href="page-about.html">Help</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="d-flex align-items-center pt-30 pb-30 mt-80 bord-thin-top">
-                    <div>
-                        <ul class="rest d-flex align-items-center">
-                            <li class="hover-this cursor-pointer">
-                                <a href="#0" class="hover-anim">
-                                    <i class="fab fa-facebook-f"></i>
-                                </a>
-                            </li>
-                            <li class="hover-this cursor-pointer ml-30">
-                                <a href="#0" class="hover-anim">
-                                    <i class="fab fa-dribbble"></i>
-                                </a>
-                            </li>
-                            <li class="hover-this cursor-pointer ml-30">
-                                <a href="#0" class="hover-anim">
-                                    <i class="fab fa-linkedin-in"></i>
-                                </a>
-                            </li>
-                            <li class="hover-this cursor-pointer ml-30">
-                                <a href="#0" class="hover-anim">
-                                    <i class="fab fa-instagram"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="ml-auto">
-                        <p class="fz-14">© 2024 Proudly Powered by <span class="underline main-color"><a href="https://www.linkedin.com/in/abir-azmyne/"
-                                    target="_blank">Abir Azmyne</a></span>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </footer>
+           <!-- ==================== End Contact ==================== -->
+
+
+           <footer class="min-footer bg-dark pt-30 pb-30">
+               <div class="container">
+                   <div class="row">
+                       <div class="col-lg-4 col-md-6 md-mb15">
+
+                       </div>
+                       <div class="col-lg-4 order-md-3">
+                           <div class="text-center">
+                               <p class="fz-14 text-white">© 2024 Powered by
+                                   <span class="underline main-color">Abir Azmyne</span>
+                               </p>
+                           </div>
+                       </div>
+                       <div class="col-lg-4 col-md-6 order-md-2 md-mb15">
+                           <div class="links d-flex justify-content-end">
+                               <ul class="rest d-flex align-items-center">
+                                   <li class="ml-30">
+                                       <a href="#" class="text-white">Careers</a>
+                                   </li>
+                                   <li class="ml-30">
+                                       <a href="#" class="text-white">Contact Us</a>
+                                   </li>
+                               </ul>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </footer>
+
+           <!-- ==================== End Footer ==================== -->
+
+        </main>
 
         <!-- ==================== End Footer ==================== -->
 
