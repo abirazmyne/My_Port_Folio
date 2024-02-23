@@ -73,18 +73,17 @@
 <!-- ==================== End Loading ==================== -->
 
 
-{{--<div class="cursor"></div>--}}
+<div class="cursor"></div>
 
 
-{{--<!-- ==================== Start progress-scroll-button ==================== -->--}}
+<!-- ==================== Start progress-scroll-button ==================== -->
+<div class="progress-wrap cursor-pointer">
+    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+    </svg>
+</div>
 
-{{--<div class="progress-wrap cursor-pointer">--}}
-{{--    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">--}}
-{{--        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />--}}
-{{--    </svg>--}}
-{{--</div>--}}
-
-{{--<!-- ==================== End progress-scroll-button ==================== -->--}}
+<!-- ==================== End progress-scroll-button ==================== -->
 
 
 
@@ -614,7 +613,7 @@
                                <p class="mt-10">If you would like to work with me or just want to get in
                                    touch, I’d love to hear from you!</p>
                                <div class="mt-80 ">
-                                   <a href="#"><span> <i class="fa-solid fa-phone"></i> </span> +88 01797306861</a>
+                                   <a href="#"><span> <i class="fa-solid fa-phone"></i> </span> +88 01797306861 (10am - 7pm)</a>
                                </div>
                                <div class=" mt-2">
                                    <a href="#"><span> <i class="fa-solid fa-envelope"></i> </span> abirazmyne0011@gmail.com</a>

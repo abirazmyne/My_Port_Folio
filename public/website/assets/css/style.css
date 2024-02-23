@@ -9273,6 +9273,12 @@ footer .subscribe-minimal button {
     width: 100%;
 }
 
+/*.full-width{*/
+
+/*margin-left: 70%;*/
+/*    max-width: 30%;*/
+/*}*/
+
 
 
 /* Shop
@@ -9285,9 +9291,20 @@ footer .subscribe-minimal button {
   .md-mb15 {
     margin-bottom: 15px;
   }
+    /*.full-width{*/
+
+    /*    margin-left: 5%;*/
+    /*    max-width: 90%*/
+    /*}*/
+
+    .mobile-m{
+        margin-top: 43px;
+    }
+
   .md-mb20 {
     margin-bottom: 20px;
   }
+
 
   .coimg{
       height: 350px;
