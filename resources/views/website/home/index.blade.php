@@ -56,110 +56,17 @@
 
                     </div>
                     <div class="col-lg-3 right-clumn">
-                       <div class="row media-pad">
+                       <div class="col-xl media-pad">
+                               <div class="card timecard">
+                                   <div class="clock " id="clock"></div>
+                                   <div class="location-info " id="locationInfo"></div>
+                                   <p class="dailtext">By latitude and longitude you can find your location <span class="text-primary">click.</span></p>
 
-                               <a href="https://www.latlong.net/Show-Latitude-Longitude.html" class="">
-                                   <style>
-                                       body {
-                                           font-family: Arial, sans-serif;
-                                           display: flex;
-                                           justify-content: center;
-                                           align-items: center;
-
-
-                                       }
-                                       .clock {
-                                           font-size: 2rem;
-                                           text-align: start;
-                                           font-weight: 600;
-                                           width: 100%;
-                                           padding-top: 0;
-
-                                           border-radius: 10px;
-
-                                       }
-
-                                       .location-info{
-                                           font-size: 1.2rem;
-                                           text-align: start;
-
-                                           border-radius: 10px;
-
-                                       }
-
-                                       .ampm {
-                                           font-size: 0.8rem;
-                                           color: red;
-                                       }
-
-                                       .dailtext{
-                                           text-align: start;
-                                           font-size: 10px;
-                                       }
-                                   </style>
-
-                                   <div class="row ">
-
-                                       <div class="clock " id="clock"></div>
-                                       <div class="location-info " id="locationInfo"></div>
-                                       <p class="dailtext">By latitude and longitude you can find your location <span class="text-primary">click.</span></p>
-                                   </div>
-
-                                   <script>
-                                       function updateTime() {
-                                           const now = new Date();
-                                           let hours = now.getHours();
-                                           const minutes = now.getMinutes();
-                                           const seconds = now.getSeconds();
-                                           const ampm = hours >= 12 ? 'PM' : 'AM';
-
-                                           // Convert to 12-hour format
-                                           hours = hours % 12 || 12;
-
-                                           // Display leading zeros for single-digit minutes and seconds
-                                           const formattedMinutes = minutes < 10 ? `0${minutes}` : minutes;
-                                           const formattedSeconds = seconds < 10 ? `0${seconds}` : seconds;
-
-                                           const timeString = `${hours}:${formattedMinutes}:${formattedSeconds} <span class="ampm">${ampm}</span>`;
-                                           document.getElementById('clock').innerHTML = timeString;
-                                       }
-
-                                       // Update time every second
-                                       setInterval(updateTime, 1000);
-                                       updateTime(); // Initial call
-
-                                       // const region = 'Asia';
-                                       // const city = 'Dhaka';
-                                       //
-                                       // // Display region and city information
-                                       // const locationString = `Region: <strong>${region}</strong><br>City: <strong>${city}</strong>`;
-                                       // document.getElementById('locationInfo').innerHTML = locationString;
-
-
-
-                                       // Get user's current location
-                                       navigator.geolocation.getCurrentPosition(
-                                           (position) => {
-                                               const latitude = position.coords.latitude;
-                                               const longitude = position.coords.longitude;
-
-                                               // Example: Display latitude and longitude
-                                               const locationString = `Latitude: <strong>${latitude.toFixed(6)}</strong><br>Longitude: <strong>${longitude.toFixed(6)}</strong>`;
-                                               document.getElementById('locationInfo').innerHTML = locationString;
-                                           },
-                                           (error) => {
-                                               console.error('Error getting location:', error.message);
-                                               document.getElementById('locationInfo').textContent = 'Error getting location. Please allow location access.';
-                                           }
-                                       );
-                                   </script>
-
-
-                               </a>
+                               </div>
                        </div>
-                        <div class="row pt-3 ">
+                        <div class="col-lg ">
                             <div class="col-sm">
-                                <div class="img pt-0" >
+                                <div class="img  my-img" >
                                     <img class="img-fluid" src="{{asset('/')}}website/assets/imgs/my_pic2.jpg" alt="">
                                 </div>
                             </div>
@@ -595,7 +502,7 @@
                     </div>
                 </div>
 
-                <div class="row justify-content-center mt-50">
+                <div class="row justify-content-center">
                     <div class="col-lg-4 col-md-6">
                         <div class="item d-flex align-items-center justify-content-center md-mb50">
                             <h2 class="fz-80 line-height-1">15+</h2>
@@ -616,11 +523,8 @@
                     </div>
                 </div>
 
-                <div class="row mt-50 mb-25" style="align-items: end;">
-                   <div class="card col-md-3 bg-danger"  style="    margin-left: 70%;">
-                       <a href="" class="fz-40 text-white text-center"> Give Me a <span class="text-white"> <i class="fa-solid fa-thumbs-up"></i></span></a>
-                   </div>
-
+                <div class="row" >
+                       <a href="" class="likebtn mx-auto"> Give Me a <span class="text-white"> <i class="fa-solid fa-thumbs-up"></i></span></a>
                 </div>
 
             </div>
@@ -1039,54 +943,75 @@
                 </div>
 
                 <div class="row">
-
                     <div class="col-lg-4">
-                        <div class="item sub-bg2 md-mb50">
-                            <div class="img">
-                                <img src="{{asset('/')}}website/assets/imgs/blog/c1.jpg" alt="">
-                            </div>
-                            <div class="cont">
-                                <div class="date sub-title mb-10 opacity-7">
-                                    <a href="blog-list.html">30 august 2021</a>
+                        <div class="card artcaclesbox ">
+                            <img src="{{asset('/')}}website/assets/imgs/blog/c1.jpg" alt=""  class="img-fluid articleimg">
+                            <div class="">
+
+                                <p class="articleCategory">Article Category </p>
+                                <p class="artcaclestars">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </p>
+
+                                <a class="articleHead" href="">Creative advertising in our life became a info noise</a>
+
+                                <div class="text-center ">
+                                    <a href="" class="artcaclesbtn btn "> Read more</a>
                                 </div>
-                                <h5>
-                                    <a href="blog-list.html">Creative advertising in our life became a info noise</a>
-                                </h5>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4">
-                        <div class="item sub-bg2 md-mb50">
-                            <div class="img">
-                                <img src="{{asset('/')}}website/assets/imgs/blog/c2.jpg" alt="">
+                        <div class="card artcaclesbox ">
+                            <img src="{{asset('/')}}website/assets/imgs/blog/c1.jpg" alt=""  class="img-fluid articleimg">
+                            <div class="">
 
-                            </div>
-                            <div class="cont">
-                                <div class="date sub-title mb-10 opacity-7">
-                                    <a href="blog-list.html">30 august 2021</a>
+                                <p class="articleCategory">Article Category </p>
+                                <p class="artcaclestars">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </p>
+
+                                <a class="articleHead" href="">Creative advertising in our life became a info noise</a>
+
+                                <div class="text-center ">
+                                    <a href="" class="artcaclesbtn btn "> Read more</a>
                                 </div>
-                                <h5>
-                                    <a href="blog-list.html">Creative advertising in our life became a info noise</a>
-                                </h5>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4">
-                        <div class="item sub-bg2">
-                            <div class="img">
-                                <img src="{{asset('/')}}website/assets/imgs/blog/c3.jpg" alt="">
+                        <div class="card artcaclesbox ">
+                            <img src="{{asset('/')}}website/assets/imgs/blog/c1.jpg" alt=""  class="img-fluid articleimg">
+                            <div class="">
 
-                            </div>
-                            <div class="cont">
-                                <div class="date sub-title mb-10 opacity-7">
-                                    <a href="blog-list.html">30 august 2021</a>
+                                <p class="articleCategory">Article Category </p>
+                                <p class="artcaclestars">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </p>
+
+                                <a class="articleHead" href="">Creative advertising in our life became a info noise</a>
+
+                                <div class="text-center ">
+                                    <a href="" class="artcaclesbtn btn "> Read more</a>
                                 </div>
-                                <h5>
-                                    <a href="blog-list.html">We create some things for your success in growth</a>
-                                </h5>
                             </div>
                         </div>
                     </div>
+
+
+
                 </div>
 
 

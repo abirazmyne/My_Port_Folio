@@ -1385,3 +1385,51 @@ $(function () {
         });
     }
 });
+
+
+function updateTime() {
+    const now = new Date();
+    let hours = now.getHours();
+    const minutes = now.getMinutes();
+    const seconds = now.getSeconds();
+    const ampm = hours >= 12 ? 'PM' : 'AM';
+
+    // Convert to 12-hour format
+    hours = hours % 12 || 12;
+
+    // Display leading zeros for single-digit minutes and seconds
+    const formattedMinutes = minutes < 10 ? `0${minutes}` : minutes;
+    const formattedSeconds = seconds < 10 ? `0${seconds}` : seconds;
+
+    const timeString = `${hours}:${formattedMinutes}:${formattedSeconds} <span class="ampm">${ampm}</span>`;
+    document.getElementById('clock').innerHTML = timeString;
+}
+
+// Update time every second
+setInterval(updateTime, 1000);
+updateTime(); // Initial call
+
+// const region = 'Asia';
+// const city = 'Dhaka';
+//
+// // Display region and city information
+// const locationString = `Region: <strong>${region}</strong><br>City: <strong>${city}</strong>`;
+// document.getElementById('locationInfo').innerHTML = locationString;
+
+
+
+// Get user's current location
+navigator.geolocation.getCurrentPosition(
+    (position) => {
+        const latitude = position.coords.latitude;
+        const longitude = position.coords.longitude;
+
+        // Example: Display latitude and longitude
+        const locationString = `Latitude: <strong>${latitude.toFixed(6)}</strong><br>Longitude: <strong>${longitude.toFixed(6)}</strong>`;
+        document.getElementById('locationInfo').innerHTML = locationString;
+    },
+    (error) => {
+        console.error('Error getting location:', error.message);
+        document.getElementById('locationInfo').textContent = 'Error getting location. Please allow location access.';
+    }
+);

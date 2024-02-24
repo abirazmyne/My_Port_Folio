@@ -5763,9 +5763,6 @@ footer .subscribe-minimal button {
   height: 2.1rem;
 }
 
-.crev-agency-header {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}
 
 .crev-agency-header .caption {
   padding-left: 15px;
@@ -5781,7 +5778,7 @@ footer .subscribe-minimal button {
 
 .crev-agency-header .left-clumn,
 .crev-agency-header .right-clumn {
-  padding: 40px 30px;
+  padding: 1px 30px;
 }
 
 .crev-agency-header .left-clumn .img,
@@ -9273,16 +9270,118 @@ footer .subscribe-minimal button {
     width: 100%;
 }
 
-/*.full-width{*/
+.artcaclesbtn{
+    background-color: #056d62c9;
+    color: white;
+    width: 100%;
+    height: 47px;
+    font-size: 21px;
+    font-weight: 400;
+    margin-top: 22px;
+    align-items: center;
+    border-radius: 0px;
+    transition: 1s;
+}
 
-/*margin-left: 70%;*/
-/*    max-width: 30%;*/
-/*}*/
+
+.artcaclesbox{
+    border-radius: 10px;
+    overflow: hidden;
+}
+.artcaclestars{
+    margin: 0px 6px 7px 10px;
+}
+
+.artcaclesbtn:hover{
+    background-color: black;
+    color: white;
+}
+
+.articleimg{
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.articleCategory{
+    margin: 20px 6px 7px 10px;
+
+    font-size: 17px;
+}
+.articleHead{
+
+    margin: 0px 0px 0px 9px;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 31px;
+}
+
+.checked {
+    color: orange;
+}
+
+.likebtn{
+    background: black;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 22px;
+    color: white;
+    line-height: 51px;
+    height: 55px;
+    padding: 2px;
+    text-align: center;
+    width: 199px;
+    border-radius: 10px;
+    transition: .5s;
+}
+
+.likebtn:hover{
+    background: red;
+    color: white;
+
+}
 
 
 
-/* Shop
------------------------------------------------------------------*/
+
+
+.clock {
+    color: #475b5f;
+    font-size: 2.3rem;
+    text-align: start;
+    font-weight: 600;
+    width: 100%;
+    padding-top: 3px;
+    border-radius: 10px;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 8px;
+
+}
+
+.location-info{
+    font-size: 1.2rem;
+    text-align: start;
+    margin-bottom: 5px;
+    border-radius: 10px;
+
+}
+
+.ampm {
+    font-size: 0.8rem;
+    color: red;
+}
+
+.dailtext{
+    text-align: start;
+    font-size: 10px;
+    margin-bottom: 5px;
+}
+.timecard
+{
+    padding: 10px;
+    background: #e5d9bc;
+    overflow: hidden;
+}
 /* ====================== [ Start Responsive ] ====================== */
 @media screen and (max-width: 992px) {
   .md-mb10 {
@@ -9291,15 +9390,24 @@ footer .subscribe-minimal button {
   .md-mb15 {
     margin-bottom: 15px;
   }
-    /*.full-width{*/
+  .timecard{
+      margin: 25px 15px 0px 15px ;
+  }
 
-    /*    margin-left: 5%;*/
-    /*    max-width: 90%*/
-    /*}*/
+    .my-img{
+      margin: 0px 15px;
+  }
 
     .mobile-m{
         margin-top: 43px;
     }
+
+    .artcaclesbox{
+        margin-top: 0px;
+        margin-bottom: 40px;
+    }
+
+
 
   .md-mb20 {
     margin-bottom: 20px;
