@@ -18,8 +18,8 @@ use App\Http\Controllers\EducationController;
 */
 
 Route::get('/', [MyWebsiteController::class, 'index'])->name('home');
-Route::get('/website/mycontact/', [MyContactController::class, 'index'])->name('mycontact');
-Route::get('/website/education/', [EducationController::class, 'index'])->name('education');
+Route::get('/portfolio/mycontact/', [MyContactController::class, 'index'])->name('mycontact');
+Route::get('/portfolio/education/', [EducationController::class, 'index'])->name('education');
 //Route::get('/product-category/{id}', [MyWebsiteController::class, 'productCategory'])->name('product.category');
 
 //

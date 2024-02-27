@@ -1,11 +1,20 @@
 @extends('website.master')
 
 @section('body')
+    <section class="container">
+       <div class="row">
+               <li class="bredmy">
+                   <a href="{{route('home')}}" class="breadonelink">Home</a> || <a class="breadtwolink breadactive" href="{{route('education')}}">Education</a>
+               </li>
+       </div>
+        <hr>
+    </section>
+
 
 
     <!-- ==================== Start about ==================== -->
 
-    <section class="about-crev section-padding position-re" data-scroll-index="2">
+    <section class="about-crev mb-100 position-re" data-scroll-index="2">
 
         <div class="container">
             <div class="row lg-marg">
@@ -20,7 +29,7 @@
                             </div>
                             <div>
                                 <div class="img fit-img radius-30">
-                                    <img src="{{asset('/')}}website/assets/imgs/intro/freelancer-intro.jpg" alt="">
+                                    <img src="{{asset('/')}}website/assets/imgs/mu_pic1.jpg" alt="" class="radius-30">
                                 </div>
                             </div>
                         </div>
@@ -45,7 +54,7 @@
                                             <h6 class="nowrap fz-16">Name :</h6>
                                         </div>
                                         <div class="ml-20">
-                                            <p class="fz-14">Matthew Perry</p>
+                                            <p class="fz-14">Abir Azmyne</p>
                                         </div>
                                     </div>
                                     <div class="d-flex align-items-center">
@@ -53,7 +62,7 @@
                                             <h6 class="nowrap fz-16">Address :</h6>
                                         </div>
                                         <div class="ml-20">
-                                            <p class="fz-14">Germany Office 478 Berlin</p>
+                                            <p class="fz-14">Dhaka, Bangladesh</p>
                                         </div>
                                     </div>
                                 </div>
@@ -63,7 +72,7 @@
                                             <h6 class="nowrap fz-16">Phone :</h6>
                                         </div>
                                         <div class="ml-20">
-                                            <p class="fz-14">+1 840 841 25 69</p>
+                                            <p class="fz-14">+88 01797306861</p>
                                         </div>
                                     </div>
                                     <div class="d-flex align-items-center">
@@ -71,7 +80,7 @@
                                             <h6 class="nowrap fz-16">Email :</h6>
                                         </div>
                                         <div class="ml-20">
-                                            <p class="fz-14">hello@design.com</p>
+                                            <p class="fz-14">abirazmyne0011@gmail.com</p>
                                         </div>
                                     </div>
                                 </div>
@@ -89,6 +98,74 @@
     </section>
 
     <!-- ==================== End about ==================== -->
+
+    <section class="container">
+
+        <div class="row collegediv ">
+
+            <div class="col-lg-3 ">
+                <div class=" collegeimgbox">
+                    <img src="{{asset('/')}}website/assets/imgs/my/education/2.jpg" alt="" class=" collegeimg ratio-4x3">
+                </div>
+
+            </div>
+
+            <div class="col-lg-9">
+
+                <div class="card">
+                    <ul class="list-group list-group-flush">
+                        <li class="linkgroup"> <b>BSc: </b> Computing Infromation System (CIS) </li>
+                        <li class="linkgroup"> <b>University: </b>Daffodil International University</li>
+                        <li class="linkgroup"> <b>Faculty: </b>FSIT</li>
+                        <li class="linkgroup"> <b>Passing Year: </b>Feb 09 2023</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="row collegediv ">
+
+            <div class="col-lg-3 ">
+                <div class=" collegeimgbox">
+                    <img src="{{asset('/')}}website/assets/imgs/my/education/3.jpg" alt="" class=" collegeimg ratio-4x3">
+                </div>
+
+            </div>
+
+            <div class="col-lg-9">
+
+                <div class="card">
+                    <ul class="list-group list-group-flush">
+                        <li class="linkgroup"> <b>Exam: </b> Higher Secondary Certificate (HSC)</li>
+                        <li class="linkgroup"> <b>College: </b>BAF Shaheen College Jashore</li>
+                        <li class="linkgroup"> <b>Year: </b>2015-2017</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="row collegediv ">
+
+            <div class="col-lg-3 ">
+                <div class=" collegeimgbox">
+                    <img src="{{asset('/')}}website/assets/imgs/my/education/1.jpg" alt="" class=" collegeimg ratio-4x3">
+                </div>
+
+            </div>
+
+            <div class="col-lg-9">
+
+                <div class="card">
+                    <ul class="list-group list-group-flush">
+                        <li class="linkgroup"> <b>Exam: </b> Secondary School Certificate (SSC)</li>
+                        <li class="linkgroup"> <b>College: </b>Municipal Preparatory High School, Jashore</li>
+                        <li class="linkgroup"> <b>Year: </b>2013-2015</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </section>
 
 
 

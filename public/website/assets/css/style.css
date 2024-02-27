@@ -86,6 +86,39 @@ main {
   z-index: 5;
 }
 
+.collegediv{
+    height: auto;
+    width: 100%;
+    border-radius: 4px;
+
+    margin: 0px 0px 40px 0px;
+    padding: 25px 10px;
+
+}
+
+.collegeimg{
+    height: 100%;
+}
+
+.collegeimgbox{
+    height: 11.1rem;
+    border-radius: 4px;
+    overflow: hidden;
+    border: 2px solid lightsteelblue;
+    margin-left: 0px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.linkgroup{
+    position: relative;
+    display: block;
+    padding: 1rem 1rem;
+    color: #212529;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.125)
+}
+
 .row > * {
   padding-left: 15px;
   padding-right: 15px;
@@ -5547,6 +5580,16 @@ body.loaded {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
+.modal {
+    z-index: 1050;!important; /* Adjust this value as needed */
+}
+
+.modal-dialog {
+    position: initial;
+    top: 10%; /* Adjust this value to position the modal where you want */
+    left: 50%;
+    transform: translateX(-50%);
+}
 
 .accordion .active .accordion-info {
   display: block;
@@ -9382,6 +9425,24 @@ footer .subscribe-minimal button {
     background: #e5d9bc;
     overflow: hidden;
 }
+
+.breadonelink{
+    text-decoration: underline;
+    padding-right: 3px;
+}
+.breadtwolink{
+    text-decoration: underline;
+    padding-left: 3px;
+    margin-right: 50px;
+}
+
+.breadactive{
+    color: #0d6efd;
+}
+.bredmy{
+    text-align: end;
+    font-size: 16px;
+}
 /* ====================== [ Start Responsive ] ====================== */
 @media screen and (max-width: 992px) {
   .md-mb10 {
@@ -9405,6 +9466,16 @@ footer .subscribe-minimal button {
     .artcaclesbox{
         margin-top: 0px;
         margin-bottom: 40px;
+    }
+
+    .collegeimgbox{
+        height: 350px;
+        border-radius: 4px;
+        overflow: hidden;
+        border: 1px solid lightsteelblue;
+        margin-left: 0px;
+        margin-bottom: 15px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
 
 

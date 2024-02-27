@@ -42,9 +42,31 @@
 
 </head>
 
-<body class="crev-agency">
+<body class="">
 
-
+<div class="modal fade " id="emailModal" tabindex="-1" aria-labelledby="emailModalLabel" aria-hidden="true" data-bs-backdrop="false">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="emailModalLabel">Enter Your Email</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="emailInput" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="emailInput" placeholder="Enter your email">
+                    </div>
+                    <!-- Add other form fields as needed -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
 
 <!-- ==================== Start Loading ==================== -->
 
@@ -73,15 +95,15 @@
 <!-- ==================== End Loading ==================== -->
 
 
-<div class="cursor"></div>
+{{--<div class="cursor"></div>--}}
 
 
-<!-- ==================== Start progress-scroll-button ==================== -->
-<div class="progress-wrap cursor-pointer">
-    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
-    </svg>
-</div>
+{{--<!-- ==================== Start progress-scroll-button ==================== -->--}}
+{{--<div class="progress-wrap cursor-pointer">--}}
+{{--    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">--}}
+{{--        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />--}}
+{{--    </svg>--}}
+{{--</div>--}}
 
 <!-- ==================== End progress-scroll-button ==================== -->
 
@@ -121,15 +143,14 @@
                                             </div>
                                             <div class="links row">
                                                 <div class="col-lg-4">
-                                                    <a class="dropdown-item" href="portfolio-standard.html">Standerd</a>
-                                                    <a class="dropdown-item" href="portfolio-gallery.html">Gallery</a>
-                                                    <a class="dropdown-item" href="portfolio-metro.html">Metro</a>
+                                                    <a class="dropdown-item" href="{{route('ecom.home')}}">E-commerce</a>
+                                                    <a class="dropdown-item" href="portfolio-gallery.html">E-commerce Admin</a>
+                                                    <a class="dropdown-item" href="portfolio-metro.html">Admin Registration</a>
                                                 </div>
                                                 <div class="col-lg-4">
                                                     <a class="dropdown-item" href="portfolio-masonry.html">Masonry</a>
                                                     <a class="dropdown-item"
-                                                       href="portfolio-caption-cursor.html">Caption
-                                                        Cursor</a>
+                                                       href="portfolio-caption-cursor.html">Caption Cursor</a>
                                                     <a class="dropdown-item" href="portfolio-outline.html">Outline</a>
                                                 </div>
                                                 <div class="col-lg-4">

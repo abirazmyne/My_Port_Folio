@@ -4,9 +4,9 @@
 
     <!-- ==================== Start Header ==================== -->
 
-    <header class="page-header-cerv bg-img section-padding" data-background="assets/imgs/header/2.jpg"
+    <header class="page-header-cerv section-padding" data-background="assets/imgs/header/2.jpg"
             data-overlay-dark="4">
-        <div class="container pt-100">
+        <div class="container">
             <div class="text-center">
                 <h1 class="fz-100">Contact Us.</h1>
                 <div class="mt-15">

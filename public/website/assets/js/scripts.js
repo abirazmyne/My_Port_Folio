@@ -1433,3 +1433,13 @@ navigator.geolocation.getCurrentPosition(
         document.getElementById('locationInfo').textContent = 'Error getting location. Please allow location access.';
     }
 );
+
+<!-- Include Bootstrap JS -->
+
+
+
+    document.getElementById('emailPopupButton').addEventListener('click', function () {
+        $('#emailModal').modal('show');
+    });
+
+

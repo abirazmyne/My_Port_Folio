@@ -3,6 +3,8 @@
 @section('body')
 
 
+
+
         <!-- ==================== Start Header ==================== -->
 
         <header class="crev-agency-header">
@@ -12,7 +14,7 @@
 
 
                             <div id="carouselExampleCaptions" class="col carousel slide">
-                                <div class="carousel-indicators">
+                                <div class="carousel-indicators smallskrin">
                                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
                                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
@@ -524,7 +526,12 @@
                 </div>
 
                 <div class="row" >
-                       <a href="" class="likebtn mx-auto"> Give Me a <span class="text-white"> <i class="fa-solid fa-thumbs-up"></i></span></a>
+
+                    <!-- Button to trigger the modal -->
+                    <button id="emailPopupButton" class="likebtn mx-auto">Give Me a <span class="text-white"> <i class="fa-solid fa-thumbs-up"></i></span></button>
+
+
+
                 </div>
 
             </div>
