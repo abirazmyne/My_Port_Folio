@@ -707,29 +707,15 @@
            <!-- ==================== End Contact ==================== -->
 
 
-           <footer class="min-footer bg-dark pt-30 pb-30">
+           <footer class=" pb-20">
                <div class="container">
                    <div class="row">
-                       <div class="col-lg-4 col-md-6 md-mb15">
-
-                       </div>
-                       <div class="col-lg-4 order-md-3">
-                           <div class="text-center">
-                               <p class="fz-14 text-white">© 2024 Powered by
-                                   <span class="underline main-color">Abir Azmyne</span>
-                               </p>
-                           </div>
-                       </div>
-                       <div class="col-lg-4 col-md-6 order-md-2 md-mb15">
-                           <div class="links d-flex justify-content-end">
-                               <ul class="rest d-flex align-items-center">
-                                   <li class="ml-30">
-                                       <a href="#" class="text-white">Careers</a>
-                                   </li>
-                                   <li class="ml-30">
-                                       <a href="#" class="text-white">Contact Us</a>
-                                   </li>
-                               </ul>
+                       <img src="{{asset('/')}}ewebsite/assets/img/my/ssl.png" class="img-fluid" alt="">
+                   </div>
+                   <div class="row align-items-center">
+                       <div class="col-md-12">
+                           <div class="">
+                               <p class="">© 2024 All Rights Reserved  |  HTML Template by <a class="" href="">Abir Azmyne</a>.</p>
                            </div>
                        </div>
                    </div>
